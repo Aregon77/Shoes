@@ -1,0 +1,38 @@
+.btn{
+    display: block;
+
+    font-size: 25px;
+    font-family: $Fonts-Button;
+    color:$Color-Button;
+    font-weight: bold;
+    line-height: 2;
+    text-transform: uppercase;
+
+    text-align: center;
+
+    width: 300px;
+    height: 50px;
+
+    text-decoration: none;
+
+    background-color:$Color-BackButt;
+
+    position: relative;
+
+    z-index: 10;
+    
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 300px;
+        height: 50px;
+        background:transparent;
+        border:2px solid $Color-BackButt;
+
+        top:12px;
+        left:-12px;
+
+        z-index: -1;
+    }
+}

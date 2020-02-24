@@ -6,6 +6,8 @@ Import
 
 /*Color*/
 @import 'Var/Color';
+/*Btn*/
+@import 'Var/btn';
 
 
 
@@ -16,16 +18,162 @@ html{
 }
 body{
     font-size: 16px;
-    box-sizing: border-box;
 }
 
 .container{
     width: 100%;
-    max-width: 1350px;
+    max-width: 1320px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
+/******
+Import
+*******/ 
 
+header {
+    background: url(../img/Header/Back.jpg) no-repeat center center;
+    background-size: cover;
+    height: 1030px;
+    position: relative;
+    .header__nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
 
-  
+        padding-top: 60px;
+        padding-bottom: 100px;
+        .header__nav_link{
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+
+            text-decoration: none;
+            p{
+            font-size: 2em;
+            font-family: $Fonts-Basket;
+            color: $Color-BackButt;
+
+            padding-left: 10px;
+            letter-spacing: 2px;
+                span{
+                    color:#000;
+                }
+            }
+        } 
+        .burger-menu{
+            background:#000;
+            border-radius: 50%;
+
+            height: 55px;
+            width: 55px;
+            border: 0;
+
+            outline: none;
+
+            justify-content: center;
+            position: relative;
+            &:before,
+            &:after{
+                display: block;
+                position: absolute;
+                content: "";
+                background:transparent;
+                border:2px solid #000;
+                border-radius: 50%;
+
+                width: 13px;
+                height: 13px;
+
+                cursor:default;
+            }
+            &:before{
+                top: 22px;
+                left: -60px;
+            }
+            &:after{
+                top: 22px;
+                left: -30px;
+            }
+
+            span{
+                font-size: 0;
+                width: 18px;
+                height: 2px;
+                background-color: #fff;
+                position: relative;
+                
+                &:before,
+                &:after{
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background-color:#fff;
+                    position: absolute;
+                }
+                &:before{
+                    top:-4px;
+                    right: 0;
+                }
+                &:after{
+                    top:4px;
+                    right: 0;
+                }
+            }
+        }
+    }
+    .header__main_brand{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 10;
+        .main_brand_picture{
+            display: block;
+            width: 325px;
+            padding-bottom: 25px;
+        }
+        .btn-header{
+            margin-left: 55px;
+        }
+    }
+    .header__picture{
+        display: flex;
+        justify-content: center;
+
+        position: absolute;
+        top: 200px;
+        left: 0;
+        right: 0;
+        bottom:0;
+
+        z-index: 0;
+
+        padding-bottom: 65px;
+    }
+
+    .header__social{
+        position: relative;
+        nav{
+            width: 70px;
+            margin: auto;
+
+            display: flex;
+            flex-direction: column;
+
+            position: absolute;
+                top: 245px;
+                right: 0;
+                bottom: 0;
+            .header__social_link{
+                width: 55px;
+                height: 55px;
+
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
   
