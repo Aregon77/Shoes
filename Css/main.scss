@@ -1,3 +1,16 @@
+/******
+Import
+*******/ 
+/*Fonts*/
+@import 'Var/Fonts';
+
+/*Color*/
+@import 'Var/Color';
+
+
+
+
+
 html{
     font-size: 10px;
 }
@@ -12,23 +25,7 @@ body{
     margin: 0 auto;
 }
 
-/*********
-$$
-**********/
-/*Fonts*/
-$Fonts-Link:'Poppins';
-$Fonts-Button:'Poppins';
-$Fonts-HeadBrand:'Roboto'; 
-$Fonts-Basket:'Ubuntu';
-$Fonts-Title:'Cormorant Garamond';
-$Fonts-Subtitle:'Poppins';
-/*Color*/
-$Color-Button:rgb(10, 10, 10);;
-$Color-Title:#000;
-$Color-Subtitle:rgb(136, 136, 136);;
-$Color-BackButt:#82f4d3;
 
 
-  
   
   
