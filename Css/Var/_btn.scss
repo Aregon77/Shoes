@@ -1,25 +1,33 @@
 .btn{
     display: block;
 
-    font-size: 25px;
     font-family: $Fonts-Button;
     color:$Color-Button;
-    font-weight: bold;
-    line-height: 2;
-    text-transform: uppercase;
 
     text-align: center;
 
-    width: 300px;
-    height: 50px;
-
     text-decoration: none;
 
-    background-color:$Color-BackButt;
+    background-color:$Color-BackButt;  
+}   
+/*.btn-header*/ 
+.btn-header{
+    width: 300px;
+    height: 50px;
+    
+    margin-left: 55px;
+    word-spacing: 8px;
 
     position: relative;
 
-    z-index: 10;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 2;
+    text-transform: uppercase;
+    &:hover:before{
+        top:5px;
+        left:-5px;
+    }
     
     &:before{
         content: "";
@@ -34,5 +42,7 @@
         left:-12px;
 
         z-index: -1;
+        
+        transition: all .2s linear;
     }
 }
