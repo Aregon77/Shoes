@@ -175,5 +175,26 @@ header {
             }
         }
     }
+
+    .header__subtitle{
+        position: relative;
+        p{
+            width: 320px;
+            display: inline-block;
+            transform: rotate(-90deg);
+
+            position: absolute;
+            top: 397px;
+            left: -245px;
+            right: 0;
+            bottom: 0;
+
+
+            font-size: 14px;
+            font-family: $Fonts-Link;
+            color: rgb(143, 143, 143);
+            line-height: 1.786;
+        }
+    }
 }
   

@@ -232,4 +232,24 @@ header .header__social nav .header__social_link {
   height: 55px;
   margin-bottom: 30px;
 }
+
+header .header__subtitle {
+  position: relative;
+}
+
+header .header__subtitle p {
+  width: 320px;
+  display: inline-block;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  position: absolute;
+  top: 397px;
+  left: -245px;
+  right: 0;
+  bottom: 0;
+  font-size: 14px;
+  font-family: "Poppins";
+  color: #8f8f8f;
+  line-height: 1.786;
+}
 /*# sourceMappingURL=main.css.map */
