@@ -1,0 +1,34 @@
+html{
+    font-size: 10px;
+}
+body{
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+/*********
+$$
+**********/
+/*Fonts*/
+$Fonts-Link:'Poppins';
+$Fonts-Button:'Poppins';
+$Fonts-HeadBrand:'Roboto'; 
+$Fonts-Basket:'Ubuntu';
+$Fonts-Title:'Cormorant Garamond';
+$Fonts-Subtitle:'Poppins';
+/*Color*/
+$Color-Button:rgb(10, 10, 10);;
+$Color-Title:#000;
+$Color-Subtitle:rgb(136, 136, 136);;
+$Color-BackButt:#82f4d3;
+
+
+  
+  
+  
