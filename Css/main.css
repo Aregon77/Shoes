@@ -48,6 +48,35 @@ Import
   transition: all .2s linear;
 }
 
+/*.btn-main*/
+.btn-main {
+  width: 145px;
+  height: 50px;
+  font-size: 1em;
+  line-height: 3;
+  position: relative;
+}
+
+.btn-main:hover:before {
+  top: -5px;
+  left: -5px;
+}
+
+.btn-main:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 145px;
+  height: 50px;
+  background: transparent;
+  border: 1px solid #82f4d3;
+  top: -12px;
+  left: -12px;
+  z-index: -1;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
 html {
   font-size: 10px;
 }
@@ -232,8 +261,8 @@ header .header__social nav {
           flex-direction: column;
   position: absolute;
   top: 245px;
-  right: -118%;
-  left: 0;
+  right: 0;
+  left: 110%;
   bottom: 0;
 }
 
@@ -276,6 +305,10 @@ header .header__subtitle p {
 }
 
 /*main*/
+main {
+  position: relative;
+}
+
 main .main__about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -287,6 +320,12 @@ main .main__about {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-top: 10rem;
+  padding-bottom: 80px;
+  top: auto;
+  right: auto;
+  left: -6%;
+  bottom: auto;
+  position: relative;
 }
 
 main .main__about .main__about_picture {
@@ -306,7 +345,74 @@ main .main__about .main__about_picture {
   opacity: 0.722;
   -webkit-box-shadow: 0px 5px 19px 1px rgba(223, 220, 220, 0.75);
           box-shadow: 0px 5px 19px 1px rgba(223, 220, 220, 0.75);
+}
+
+main .main__about_desc {
+  position: absolute;
+  top: 60%;
+  left: 44%;
+  bottom: auto;
+  right: auto;
+}
+
+main .main__about_desc h3 {
+  font-size: 2em;
+  font-family: "Cormorant Garamond";
+  color: #000;
+  text-align: left;
+  padding-bottom: 3rem;
+}
+
+main .main__about_desc P {
+  font-size: 1em;
+  font-family: "Poppins";
+  color: #888888;
+  line-height: 2;
+  text-align: left;
+  width: 600px;
+  padding-bottom: 4rem;
+}
+
+main .main__about_desc a {
+  margin-left: auto;
+}
+
+main .main__popular .main__title {
+  font-size: 45px;
+  font-family: "Cormorant Garamond";
+  color: #000;
+  line-height: 0.556;
+  text-align: left;
+  padding-bottom: 60px;
+}
+
+main .main__popular .main__popular_block .popular__picture {
+  width: 250px;
+  height: 365px;
   position: relative;
-  z-index: 2;
+  padding-bottom: 60px;
+}
+
+main .main__popular .main__popular_block .popular__picture img {
+  width: 100%;
+}
+
+main .main__popular .main__popular_block .popular__picture:hover:before {
+  opacity: 1;
+}
+
+main .main__popular .main__popular_block .popular__picture:before {
+  content: "";
+  opacity: 0;
+  width: 230px;
+  height: 286px;
+  background-color: #82f4d3;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,41 @@
+.main__popular{
+    .main__title{
+        font-size: 45px;
+        font-family: $Fonts-Title;
+        color: $Color-Title;
+        line-height: 0.556;
+        text-align: left;
+
+        padding-bottom: 60px;
+    }
+    .main__popular_block{
+        .popular__picture{
+            width: 250px;
+            height: 365px;
+            position: relative;
+
+            padding-bottom: 60px;
+            img{
+                width: 100%;
+            }
+            &:hover:before{
+                opacity: 1;
+            }
+            &:before{
+                content: "";
+                opacity: 0;
+
+                width: 230px;
+                height: 286px;
+                background-color: $Color-BackButt;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                right: 0;
+                bottom: 0;  
+                
+                transition: all .2s linear;
+            }
+        }
+    }
+}

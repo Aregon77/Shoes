@@ -29,4 +29,9 @@ Import
 /*header*/
 @import 'block/header';
 /*main*/
-@import 'block/main';
+main{
+    position: relative;
+    @import 'block/main__about';
+    @import 'block/main__popular';
+}
+
