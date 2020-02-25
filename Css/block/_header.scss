@@ -1,0 +1,176 @@
+header {
+    background: url(../img/Header/Back.jpg) no-repeat center center;
+    background-size: cover;
+    height: 1000px;
+    position: relative;
+    .header__nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        padding-top: 6rem;
+        padding-bottom: 10rem;
+        .header__nav_link{
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+
+            text-decoration: none;
+
+
+            p{
+            font-size: 2em;
+            font-family: $Fonts-Basket;
+            color: $Color-BackButt;
+
+            padding-left: 1rem;
+            letter-spacing: 2px;
+                span{
+                    color:#000;
+                }
+            }
+        } 
+        .burger-menu{
+            background:#000;
+            border-radius: 50%;
+
+            height: 55px;
+            width: 55px;
+            border: 0;
+
+            outline: none;
+
+            justify-content: center;
+            position: relative;
+            &:before,
+            &:after{
+                display: block;
+                position: absolute;
+                content: "";
+                background:transparent;
+                border:2px solid #000;
+                border-radius: 50%;
+
+                width: 13px;
+                height: 13px;
+
+                cursor:default;
+            }
+            &:before{
+                top: 22px;
+                left: -60px;
+            }
+            &:after{
+                top: 22px;
+                left: -30px;
+            }
+
+            span{
+                font-size: 0;
+                width: 18px;
+                height: 2px;
+                background-color: #fff;
+                position: relative;
+                
+                &:before,
+                &:after{
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background-color:inherit;
+                    position: absolute;
+                }
+                &:before{
+                    top:-4px;
+                    right: 0;
+                }
+                &:after{
+                    top:4px;
+                    right: 0;
+                }
+            }
+        }
+    }
+    .header__main_brand{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 10;
+        .main_brand_picture{
+            display: block;
+            width: 325px;
+            padding-bottom: 2.5rem;
+        }
+        
+    }
+    .header__picture{
+        display: flex;
+        justify-content: center;
+
+        position: absolute;
+        top: 200px;
+        left: 0;
+        right: 0;
+        bottom:0;
+
+        z-index: 0;
+
+        padding-bottom: 6.5rem;
+    }
+
+    .header__social{
+        position: relative;
+        nav{
+            width: 70px;
+            margin: auto;
+
+            display: flex;
+            flex-direction: column;
+
+            position: absolute;
+                top: 245px;
+                right: -118%;
+                left: 0;
+                bottom: 0;
+            .header__social_link{
+                width: 55px;
+                height: 55px;
+
+                margin-bottom: 3rem;
+                .social__icon{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    transition: all .2s linear;
+                    &:hover{
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .header__subtitle{
+        position: relative;
+        p{
+            width: 320px;
+            display: inline-block;
+            transform: rotate(-90deg);
+
+            position: absolute;
+            top: 397px;
+            left: -245px;
+            right: 0;
+            bottom: 0;
+
+
+            font-size: 0.9em;
+            font-family: $Fonts-Link;
+            color: rgb(143, 143, 143);
+            line-height: 1.8;
+        }
+    }
+}
