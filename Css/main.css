@@ -77,6 +77,24 @@ Import
   transition: all .2s linear;
 }
 
+/*.btn-popular*/
+.btn-popular {
+  background: transparent;
+  border: 2px solid #fff;
+  width: 150px;
+  height: 50px;
+  color: #fff;
+  line-height: 3;
+  position: absolute;
+  top: 35%;
+  left: 21%;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
 html {
   font-size: 10px;
 }
@@ -383,25 +401,42 @@ main .main__popular .main__title {
   color: #000;
   line-height: 0.556;
   text-align: left;
-  padding-bottom: 60px;
+  padding-bottom: 6rem;
 }
 
-main .main__popular .main__popular_block .popular__picture {
+main .main__popular .main__popular_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .main__popular .main__popular_block .main__popular_item {
+  width: 25%;
+}
+
+main .main__popular .main__popular_block .main__popular_item .popular__picture {
   width: 250px;
   height: 365px;
   position: relative;
-  padding-bottom: 60px;
+  padding-bottom: 6rem;
 }
 
-main .main__popular .main__popular_block .popular__picture img {
+main .main__popular .main__popular_block .main__popular_item .popular__picture img {
   width: 100%;
 }
 
-main .main__popular .main__popular_block .popular__picture:hover:before {
+main .main__popular .main__popular_block .main__popular_item .popular__picture:hover:before,
+main .main__popular .main__popular_block .main__popular_item .popular__picture:hover .btn-popular {
   opacity: 1;
 }
 
-main .main__popular .main__popular_block .popular__picture:before {
+main .main__popular .main__popular_block .main__popular_item .popular__picture:before {
   content: "";
   opacity: 0;
   width: 230px;
@@ -414,5 +449,27 @@ main .main__popular .main__popular_block .popular__picture:before {
   bottom: 0;
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
+}
+
+main .main__popular .main__popular_block .main__popular_item p {
+  font-size: 1em;
+  font-family: "Poppins";
+  color: black;
+  line-height: 2;
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
+main .main__popular .main__popular_block .main__popular_item p span {
+  opacity: 0.5;
+  padding-left: 2rem;
+}
+
+main .main__popular .main__popular_block .main__popular_item .price {
+  font-size: 1.6em;
+  font-family: "Roboto";
+  color: #999999;
+  line-height: 1.2;
+  text-align: left;
 }
 /*# sourceMappingURL=main.css.map */
