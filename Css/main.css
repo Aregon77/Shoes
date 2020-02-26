@@ -340,7 +340,7 @@ main .main__subtitle {
   color: #888888;
   line-height: 2;
   text-align: left;
-  width: 600px;
+  max-width: 600px;
   padding-bottom: 6rem;
   text-align: justify;
 }
@@ -521,5 +521,44 @@ main .main__collection .main__collection_picture:before {
 
 main .main__collection .main__collection_picture img {
   height: 100%;
+}
+
+main .reviews .slick-prev:before, main .reviews .slick-next:before {
+  color: #000;
+  font-size: 45px;
+}
+
+main .reviews .reviews_slider-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1rem;
+  outline: none;
+}
+
+main .reviews .reviews_slider-block p {
+  width: 100%;
+  max-width: 850px;
+  text-align: center;
+}
+
+main .reviews .reviews_slider-block span {
+  font-size: 1.2em;
+  font-family: "Poppins";
+  color: #666666;
+}
+
+main .reviews .reviews_slider-block .prof {
+  color: #82f4d3;
 }
 /*# sourceMappingURL=main.css.map */

@@ -50,7 +50,7 @@ main{
         line-height: 2;
         text-align: left;
 
-        width: 600px;
+        max-width: 600px;
 
         padding-bottom: 6rem;
 
@@ -61,6 +61,6 @@ main{
     @import 'block/main__about';
     @import 'block/main__popular';
     @import 'block/main__collection';
-
+    @import 'block/reviews';
 }
 
