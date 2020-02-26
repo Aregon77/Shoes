@@ -1,19 +1,11 @@
 .main__popular{
-    .main__title{
-        font-size: 45px;
-        font-family: $Fonts-Title;
-        color: $Color-Title;
-        line-height: 0.556;
-        text-align: left;
-
-        padding-bottom: 6rem;
-    }
+    padding-bottom: 13rem;
     .main__popular_block{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         .main__popular_item{
-            width: 25%;
+            flex: 1;
             .popular__picture{
                 width: 250px;
                 height: 305px;

@@ -31,7 +31,36 @@ Import
 /*main*/
 main{
     position: relative;
+    .main__title{
+        font-size: 45px;
+        font-family: $Fonts-Title;
+        color: $Color-Title;
+        line-height: 0.556;
+        font-weight: 500;
+
+        text-align: left;
+
+        padding-bottom: 3rem;
+    }
+
+    .main__subtitle{
+        font-size: 1em;
+        font-family: $Fonts-Button;
+        color: $Color-Subtitle;
+        line-height: 2;
+        text-align: left;
+
+        width: 600px;
+
+        padding-bottom: 6rem;
+
+        text-align: justify;
+    }
+    
+    
     @import 'block/main__about';
     @import 'block/main__popular';
+    @import 'block/main__collection';
+
 }
 

@@ -7,7 +7,15 @@ Import
 /*Color*/
 /*Btn*/
 .btn {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: "Poppins";
   color: #0a0a0a;
   text-align: center;
@@ -24,7 +32,6 @@ Import
   position: relative;
   font-size: 25px;
   font-weight: bold;
-  line-height: 2;
   text-transform: uppercase;
 }
 
@@ -50,10 +57,10 @@ Import
 
 /*.btn-main*/
 .btn-main {
-  width: 145px;
-  height: 50px;
+  width: 146px;
+  height: 47px;
   font-size: 1em;
-  line-height: 3;
+  padding: 15px 25px;
   position: relative;
 }
 
@@ -84,7 +91,6 @@ Import
   width: 150px;
   height: 50px;
   color: #fff;
-  line-height: 3;
   position: absolute;
   top: 45%;
   left: 21%;
@@ -280,7 +286,7 @@ header .header__social nav {
   position: absolute;
   top: 245px;
   right: 0;
-  left: 110%;
+  left: 101%;
   bottom: 0;
 }
 
@@ -318,6 +324,27 @@ main {
   position: relative;
 }
 
+main .main__title {
+  font-size: 45px;
+  font-family: "Cormorant Garamond";
+  color: #000;
+  line-height: 0.556;
+  font-weight: 500;
+  text-align: left;
+  padding-bottom: 3rem;
+}
+
+main .main__subtitle {
+  font-size: 1em;
+  font-family: "Poppins";
+  color: #888888;
+  line-height: 2;
+  text-align: left;
+  width: 600px;
+  padding-bottom: 6rem;
+  text-align: justify;
+}
+
 main .main__about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,7 +377,7 @@ main .main__about .main__about_picture {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #eeeded;
-  border: 4px solid #fff;
+  border: 6px solid #fff;
   opacity: 0.722;
   -webkit-box-shadow: 0px 5px 19px 1px rgba(223, 220, 220, 0.75);
           box-shadow: 0px 5px 19px 1px rgba(223, 220, 220, 0.75);
@@ -364,35 +391,16 @@ main .main__about_desc {
   right: auto;
 }
 
-main .main__about_desc h3 {
-  font-size: 2em;
-  font-family: "Cormorant Garamond";
-  color: #000;
-  text-align: left;
-  padding-bottom: 3rem;
-}
-
 main .main__about_desc P {
-  font-size: 1em;
-  font-family: "Poppins";
-  color: #888888;
-  line-height: 2;
-  text-align: left;
-  width: 600px;
-  padding-bottom: 4rem;
+  max-width: 600px;
 }
 
 main .main__about_desc a {
   margin-left: auto;
 }
 
-main .main__popular .main__title {
-  font-size: 45px;
-  font-family: "Cormorant Garamond";
-  color: #000;
-  line-height: 0.556;
-  text-align: left;
-  padding-bottom: 6rem;
+main .main__popular {
+  padding-bottom: 13rem;
 }
 
 main .main__popular .main__popular_block {
@@ -408,7 +416,9 @@ main .main__popular .main__popular_block {
 }
 
 main .main__popular .main__popular_block .main__popular_item {
-  width: 25%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 main .main__popular .main__popular_block .main__popular_item .popular__picture {
@@ -462,5 +472,54 @@ main .main__popular .main__popular_block .main__popular_item .price {
   color: #999999;
   line-height: 1.2;
   text-align: left;
+}
+
+main .main__collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 200px;
+}
+
+main .main__collection .main__collection_picture {
+  background-color: #fde7ed;
+  border: 6px solid #fff;
+  -webkit-box-shadow: 0px 5px 19px 1px rgba(223, 220, 220, 0.75);
+          box-shadow: 0px 5px 19px 1px rgba(223, 220, 220, 0.75);
+  width: 480px;
+  height: 530px;
+  position: relative;
+}
+
+main .main__collection .main__collection_picture:before {
+  display: block;
+  content: "";
+  width: 300px;
+  height: 385px;
+  background-image: linear-gradient(114deg, #65e0bc 0%, #c9f9eb 100%);
+  background-image: -ms-linear-gradient(114deg, #65e0bc 0%, #c9f9eb 100%);
+  opacity: 0.722;
+  position: absolute;
+  top: 240px;
+  left: 280px;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+main .main__collection .main__collection_picture img {
+  height: 100%;
 }
 /*# sourceMappingURL=main.css.map */
