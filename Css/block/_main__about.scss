@@ -9,7 +9,7 @@
 
     top: auto;
     right: auto;
-    left: -6%;
+    left: -7%;
     bottom: auto;
 
     position: relative;
@@ -30,10 +30,12 @@
 }
 .main__about_desc{
     position: absolute;
-    top: 60%;
-    left: 44%;
+    top: 52%;
+    left: 40%;
     bottom: auto;
     right: auto;
+    // transform: translateX(-22%) translateY(20%);
+    
 
     h3{
         font-size: 2em;

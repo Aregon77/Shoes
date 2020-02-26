@@ -154,18 +154,10 @@ header {
     }
 
     .header__subtitle{
-        position: relative;
         p{
             width: 320px;
             display: inline-block;
-            transform: rotate(-90deg);
-
-            position: absolute;
-            top: 397px;
-            left: -245px;
-            right: 0;
-            bottom: 0;
-
+            transform: translateX(-219px) translateY(354px) rotate(-90deg);
 
             font-size: 0.9em;
             font-family: $Fonts-Link;
