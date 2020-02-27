@@ -38,8 +38,6 @@ main{
         line-height: 0.556;
         font-weight: 500;
 
-        text-align: left;
-
         padding-bottom: 3rem;
     }
 
@@ -57,10 +55,15 @@ main{
         text-align: justify;
     }
     
-    
+    /*main__about*/
     @import 'block/main__about';
+    /*main__popular*/
     @import 'block/main__popular';
+    /*main__collection*/
     @import 'block/main__collection';
+    /*main__reviews*/
     @import 'block/reviews';
+    /*main__blog*/
+    @import 'block/main__blog';
 }
 

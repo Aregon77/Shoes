@@ -1,4 +1,8 @@
-.reviews{
+.main__reviews{
+    padding-bottom: 9.5rem;
+    .slick-prev {
+        left: -50px;
+    }
     .slick-prev:before, .slick-next:before{
         color: #000;
         font-size: 45px;
