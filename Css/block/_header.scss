@@ -12,26 +12,6 @@ header {
 
         padding-top: 6rem;
         padding-bottom: 10rem;
-        .header__nav_link{
-            display: flex;
-            flex-direction: row;
-            align-items:center;
-
-            text-decoration: none;
-
-
-            p{
-            font-size: 2em;
-            font-family: $Fonts-Basket;
-            color: $Color-BackButt;
-
-            padding-left: 1rem;
-            letter-spacing: 2px;
-                span{
-                    color:#000;
-                }
-            }
-        } 
         .burger-menu{
             background:#000;
             border-radius: 50%;

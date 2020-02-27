@@ -26,9 +26,31 @@ body{
 /******
 Import
 *******/ 
-/*header*/
-@import 'block/header';
+
+
+
 /*main*/
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+
+    text-decoration: none;
+
+
+    p{
+    font-size: 2em;
+    font-family: $Fonts-Basket;
+    color: $Color-BackButt;
+
+    padding-left: 1rem;
+    letter-spacing: 2px;
+        span{
+            color:#000;
+        }
+    }
+} 
+
 main{
     position: relative;
     .main__title{
@@ -55,15 +77,37 @@ main{
         text-align: justify;
     }
     
-    /*main__about*/
-    @import 'block/main__about';
-    /*main__popular*/
-    @import 'block/main__popular';
-    /*main__collection*/
-    @import 'block/main__collection';
-    /*main__reviews*/
-    @import 'block/reviews';
-    /*main__blog*/
-    @import 'block/main__blog';
+    
 }
+
+/*Link*/
+.nav__link{
+    display: flex;
+    flex-direction: column;
+    .link{
+        text-decoration: none;
+        font-size: 1em;
+        font-family: $Fonts-Link;
+        color: rgb(136, 136, 136);
+        line-height: 1.667;
+        
+
+        margin-bottom: 10px;
+    }
+}
+
+/*header*/
+@import 'block/header';
+/*main__about*/
+@import 'block/main__about';
+/*main__popular*/
+@import 'block/main__popular';
+/*main__collection*/
+@import 'block/main__collection';
+/*main__reviews*/
+@import 'block/reviews';
+/*main__blog*/
+@import 'block/main__blog';
+/*footer*/
+@import 'block/footer';
 
