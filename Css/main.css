@@ -225,78 +225,6 @@ header .header__nav {
   padding-bottom: 10rem;
 }
 
-header .header__nav .burger-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #000;
-  border-radius: 50%;
-  height: 55px;
-  width: 55px;
-  border: 0;
-  outline: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-}
-
-header .header__nav .burger-menu:before, header .header__nav .burger-menu:after {
-  display: block;
-  position: absolute;
-  content: "";
-  background: transparent;
-  border: 2px solid #000;
-  border-radius: 50%;
-  width: 13px;
-  height: 13px;
-  cursor: default;
-}
-
-header .header__nav .burger-menu:before {
-  top: 22px;
-  left: -60px;
-}
-
-header .header__nav .burger-menu:after {
-  top: 22px;
-  left: -30px;
-}
-
-header .header__nav .burger-menu span {
-  font-size: 0;
-  width: 18px;
-  height: 2px;
-  background-color: #fff;
-  position: relative;
-}
-
-header .header__nav .burger-menu span:before, header .header__nav .burger-menu span:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: inherit;
-  position: absolute;
-}
-
-header .header__nav .burger-menu span:before {
-  top: -4px;
-  right: 0;
-}
-
-header .header__nav .burger-menu span:after {
-  top: 4px;
-  right: 0;
-}
-
 header .header__main_brand {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -379,6 +307,128 @@ header .header__subtitle p {
   font-family: "Poppins";
   color: #8f8f8f;
   line-height: 1.8;
+}
+
+/*burger*/
+.menu_btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu_btn:before, .menu_btn:after {
+  display: block;
+  position: absolute;
+  content: "";
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  cursor: default;
+}
+
+.menu_btn:before {
+  top: 22px;
+  left: -60px;
+}
+
+.menu_btn:after {
+  top: 22px;
+  left: -30px;
+}
+
+.menu_btn .nav__link {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
+  -webkit-transform: scaleX(0) translateX(20%);
+          transform: scaleX(0) translateX(20%);
+  opacity: 0;
+}
+
+.menu_btn .nav__link a {
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+.menu_btn .nav__link_active {
+  -webkit-transform: scaleX(1) translateX(0%);
+          transform: scaleX(1) translateX(0%);
+  opacity: 1;
+}
+
+.menu_btn .burger-menu {
+  display: block;
+  background: #000;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  position: relative;
+}
+
+.menu_btn .burger-menu span {
+  position: absolute;
+  margin-top: -1px;
+  margin-left: -10px;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.menu_btn .burger-menu span::before, .menu_btn .burger-menu span::after {
+  content: '';
+  position: absolute;
+  margin-top: -1px;
+  margin-left: -10px;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.menu_btn .burger-menu span::before {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.menu_btn .burger-menu span::after {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.menu_btn .burger-menu_active span:before {
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+  width: 10px;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+}
+
+.menu_btn .burger-menu_active span:after {
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  width: 10px;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
 }
 
 /*main__about*/
