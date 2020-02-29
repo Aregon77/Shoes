@@ -9,6 +9,24 @@ Import
 /*Btn*/
 @import 'Var/btn';
 
+/*header*/
+@import 'block/header';
+/*burger*/
+@import 'block/burger';
+/*main__about*/
+@import 'block/main__about';
+/*main__popular*/
+@import 'block/main__popular';
+/*main__collection*/
+@import 'block/main__collection';
+/*main__reviews*/
+@import 'block/reviews';
+/*main__blog*/
+@import 'block/main__blog';
+/*footer*/
+@import 'block/footer';
+
+/*Html*/
 html{
     font-size: 10px;
     width: 100%;
@@ -29,13 +47,7 @@ body{
     padding: 0 15px;
 }
 
-/******
-Import
-*******/ 
-
-
-
-/*main*/
+/*Logo*/
 .logo{
     display: flex;
     flex-direction: row;
@@ -56,11 +68,11 @@ Import
         }
     }
 } 
-
+/*Main*/
 main{
     position: relative;
     .main__title{
-        font-size: 45px;
+        font-size: 2.8em;
         font-family: $Fonts-Title;
         color: $Color-Title;
         line-height: 0.556;
@@ -101,21 +113,3 @@ main{
         margin-bottom: 10px;
     }
 }
-
-/*header*/
-@import 'block/header';
-/*burger*/
-@import 'block/burger';
-/*main__about*/
-@import 'block/main__about';
-/*main__popular*/
-@import 'block/main__popular';
-/*main__collection*/
-@import 'block/main__collection';
-/*main__reviews*/
-@import 'block/reviews';
-/*main__blog*/
-@import 'block/main__blog';
-/*footer*/
-@import 'block/footer';
-
