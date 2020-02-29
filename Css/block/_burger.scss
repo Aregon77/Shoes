@@ -5,8 +5,9 @@
     justify-content: center;
     align-items: center;
     .nav__link{
-        display: block;
+        display: flex;
         flex-direction: row;
+        align-items:center;
 
         margin-right: 10px;
 
@@ -16,8 +17,8 @@
         opacity: 0;
 
         background-color:#000;
-        height: 50px;
-        line-height: 50px;
+        height: 40px;
+       
         padding-left: 25px;
         padding-right: 5px;
         
@@ -38,7 +39,6 @@
     .nav__link_active{
         transform:  translateX(0%);
         opacity: 1;
-        
     }
     .burger-menu {
         display: block;

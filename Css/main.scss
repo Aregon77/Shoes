@@ -9,6 +9,24 @@ Import
 /*Btn*/
 @import 'Var/btn';
 
+/*header*/
+@import 'block/header';
+/*burger*/
+@import 'block/burger';
+/*main__about*/
+@import 'block/main__about';
+/*main__popular*/
+@import 'block/main__popular';
+/*main__collection*/
+@import 'block/main__collection';
+/*main__reviews*/
+@import 'block/reviews';
+/*main__blog*/
+@import 'block/main__blog';
+/*footer*/
+@import 'block/footer';
+
+/*Html*/
 html{
     font-size: 10px;
     width: 100%;
@@ -29,13 +47,7 @@ body{
     padding: 0 15px;
 }
 
-/******
-Import
-*******/ 
-
-
-
-/*main*/
+/*Logo*/
 .logo{
     display: flex;
     flex-direction: row;
@@ -43,7 +55,7 @@ Import
 
     text-decoration: none;
 
-
+    width: 40px;
     p{
     font-size: 2em;
     font-family: $Fonts-Basket;
@@ -56,11 +68,11 @@ Import
         }
     }
 } 
-
+/*Main*/
 main{
     position: relative;
     .main__title{
-        font-size: 45px;
+        font-size: 2.8em;
         font-family: $Fonts-Title;
         color: $Color-Title;
         line-height: 0.556;
@@ -102,20 +114,84 @@ main{
     }
 }
 
-/*header*/
-@import 'block/header';
-/*burger*/
-@import 'block/burger';
-/*main__about*/
-@import 'block/main__about';
-/*main__popular*/
-@import 'block/main__popular';
-/*main__collection*/
-@import 'block/main__collection';
-/*main__reviews*/
-@import 'block/reviews';
-/*main__blog*/
-@import 'block/main__blog';
-/*footer*/
-@import 'block/footer';
 
+/*Media*/
+@media screen and (max-width: 480px) {
+    html{
+        font-size: 5px;
+    }
+    body{
+        font-size: 11px;
+    }
+    header{
+        background-position:center left;
+        height: 100vh;
+        .btn-header{
+            width: 200px;
+            height: 40px;
+        }
+        .menu_btn {
+            .burger-menu{
+                height: 40px;
+                width: 40px;
+                outline: 0;  
+            }
+            .nav__link{
+                padding-left: 10px;
+                padding-right: 10px;
+                margin-right: 5px;
+                a{
+                  margin-right: 5px;
+                  outline: 0;  
+                }
+            }
+            .nav__link_active{
+                position: relative;
+                z-index: 100;
+            }
+        }
+        .header__social{
+            nav{
+                flex-direction: row;
+                left: 8%;
+                top: 290px;
+                .header__social_link{
+                    margin-left: 20px;
+                    margin-bottom: 0;
+
+                    width: 45px;
+                    height: 45px
+
+                }
+            }
+        } 
+    } 
+    
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+
+@media (min-width: 1280px) {
+    html{
+        font-size: 15px;
+    }
+    body{
+        font-size: 21px;
+    }
+    header .header__subtitle p{
+        transform: translateX(-125px) translateY(354px) rotate(-90deg);
+    }
+    .main__about .main__about_picture{
+        transform: translateX(98px);
+    }
+}
