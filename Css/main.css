@@ -852,6 +852,15 @@ main .main__subtitle {
 }
 
 /*Media*/
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 5px;
+  }
+  body {
+    font-size: 8px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   html {
     font-size: 5px;
