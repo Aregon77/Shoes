@@ -850,4 +850,24 @@ main .main__subtitle {
   line-height: 1.667;
   margin-bottom: 10px;
 }
+
+/*Media*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  header .header__social nav {
+    left: 95%;
+  }
+  header .header__subtitle p {
+    -webkit-transform: translateX(-130px) translateY(354px) rotate(-90deg);
+            transform: translateX(-130px) translateY(354px) rotate(-90deg);
+  }
+  .main .main__about {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: auto;
+  }
+  .main .main__about .main__about_desc {
+    left: 21%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
