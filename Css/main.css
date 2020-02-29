@@ -110,10 +110,16 @@ Import
 
 html {
   font-size: 10px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   font-size: 16px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -323,50 +329,45 @@ header .header__subtitle p {
           align-items: center;
 }
 
-.menu_btn:before, .menu_btn:after {
-  display: block;
-  position: absolute;
-  content: "";
-  background: transparent;
-  border: 2px solid #000;
-  border-radius: 50%;
-  width: 13px;
-  height: 13px;
-  cursor: default;
-}
-
-.menu_btn:before {
-  top: 22px;
-  left: -60px;
-}
-
-.menu_btn:after {
-  top: 22px;
-  left: -30px;
-}
-
 .menu_btn .nav__link {
+  display: block;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-right: 10px;
   -webkit-transition: all .5s;
   transition: all .5s;
   -webkit-transform-origin: right center;
           transform-origin: right center;
-  -webkit-transform: scaleX(0) translateX(20%);
-          transform: scaleX(0) translateX(20%);
+  -webkit-transform: translateX(15%);
+          transform: translateX(15%);
   opacity: 0;
+  background-color: #000;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 25px;
+  padding-right: 5px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
 }
 
 .menu_btn .nav__link a {
-  margin-right: 10px;
+  margin-right: 20px;
   margin-bottom: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.menu_btn .nav__link a:hover {
+  color: #fff;
 }
 
 .menu_btn .nav__link_active {
-  -webkit-transform: scaleX(1) translateX(0%);
-          transform: scaleX(1) translateX(0%);
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
   opacity: 1;
 }
 
