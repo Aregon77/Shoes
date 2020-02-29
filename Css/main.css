@@ -790,6 +790,8 @@ body {
           align-items: center;
   text-decoration: none;
   width: 40px;
+  position: relative;
+  z-index: 1;
 }
 
 .logo p {
@@ -959,6 +961,88 @@ main .main__subtitle {
   }
   .footer__inner .footer__nav .nav__link {
     margin-left: 8rem;
+  }
+}
+
+@media screen and (max-height: 480px) {
+  .btn-main {
+    height: 40px;
+    width: 122px;
+  }
+  html {
+    font-size: 5px;
+  }
+  body {
+    font-size: 12px;
+  }
+  header {
+    background-position: center left;
+    height: 100vh;
+  }
+  header .logo {
+    position: absolute;
+    z-index: 1;
+  }
+  header .btn-header {
+    width: 200px;
+    height: 40px;
+  }
+  header .menu_btn .burger-menu {
+    height: 40px;
+    width: 40px;
+    outline: 0;
+  }
+  header .menu_btn .nav__link {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 5px;
+    width: 300px;
+  }
+  header .menu_btn .nav__link a {
+    margin-right: 12px;
+    outline: 0;
+  }
+  header .menu_btn .nav__link_active {
+    position: relative;
+    z-index: 100;
+    width: 300px;
+  }
+  header .header__main_brand {
+    padding-top: 7em;
+  }
+  header .header__picture {
+    bottom: 100px;
+  }
+  header .header__social nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    left: 8%;
+    top: 360px;
+  }
+  header .header__social nav .header__social_link {
+    margin-left: 20px;
+    margin-bottom: 0;
+    width: 45px;
+    height: 45px;
+  }
+  header .header__subtitle {
+    display: none;
+  }
+  .main .main__about_picture {
+    height: 470px;
+  }
+  .main .main__about_desc {
+    top: 66%;
+    left: 4% !important;
+  }
+  .main .main__about_desc .main__title {
+    font-size: 2em;
+  }
+  .main .main__about_desc .main__subtitle {
+    text-align: left;
+    padding-bottom: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -56,6 +56,9 @@ body{
     text-decoration: none;
 
     width: 40px;
+
+    position: relative;
+    z-index: 1;
     
     p{
     font-size: 2em;
@@ -263,61 +266,98 @@ main{
 
 }
 @media (max-width: 767px) {
-
+    
 }
 
-// @media screen and (max-width: 480px) {
-//     html{
-//         font-size: 5px;
-//     }
-//     body{
-//         font-size: 11px;
-//     }
-//     header{
-//         background-position:center left;
-//         height: 100vh;
-//         .btn-header{
-//             width: 200px;
-//             height: 40px;
+ @media screen and (max-height: 480px) {
+    .btn-main{
+        height: 40px;
+        width: 122px;
+    }
+    html{
+        font-size: 5px;
+    }
+    body{
+        font-size: 12px;
+    }
+    header{
+        background-position:center left;
+        height: 100vh;
+        .logo{
+            position: absolute;
+            z-index: 1;
+        }
+        .btn-header{
+            width: 200px;
+            height: 40px;
+        }
+        .menu_btn {
+            .burger-menu{
+                height: 40px;
+                width: 40px;
+                outline: 0;  
+            }
+            .nav__link{
+                padding-left: 10px;
+                padding-right: 10px;
+                margin-right: 5px;
+                width: 300px;
+                a{
+                  margin-right: 12px;
+                  outline: 0;  
+                }
+            }
+            .nav__link_active{
+                position: relative;
+                z-index: 100;
+                width: 300px;
+            }
+        }
+        .header__main_brand{
+            padding-top: 7em;
+        }
+        .header__picture{
+            bottom: 100px;
+        }
+        .header__social{
+            nav{
+                flex-direction: row;
+                left: 8%;
+                top: 360px;
+                .header__social_link{
+                    margin-left: 20px;
+                    margin-bottom: 0;
 
-//         }
-//         .menu_btn {
-//             left: 30px;
-//             .burger-menu{
-//                 height: 40px;
-//                 width: 40px;
-//                 outline: 0;  
-//             }
-//             .nav__link{
-//                 padding-left: 10px;
-//                 padding-right: 10px;
-//                 margin-right: 5px;
-//                 a{
-//                   margin-right: 5px;
-//                   outline: 0;  
-//                 }
-//             }
-//             .nav__link_active{
-//                 position: relative;
-//                 z-index: 100;
-//             }
-//         }
-//         .header__social{
-//             nav{
-//                 flex-direction: row;
-//                 left: 8%;
-//                 top: 290px;
-//                 .header__social_link{
-//                     margin-left: 20px;
-//                     margin-bottom: 0;
+                    width: 45px;
+                    height: 45px;
 
-//                     width: 45px;
-//                     height: 45px;
+                }
+            }
+        } 
+        .header__subtitle{
+            display: none;
+        }
+    } 
+    .main{
+        .main__about_picture{
+            height: 470px;
+        }
+        .main__about_desc{
+            top: 66%;
+            left: 4%!important;
+            .main__title{
+                font-size: 2em;
+            }
+            .main__subtitle{
+                text-align: left;
+                padding-bottom: 0;
+            }
+            a{
 
-//                 }
-//             }
-//         } 
-//     } 
+            }
+        }
+    }   
+} 
     
 // }
 // @media screen and (max-width: 321px){
