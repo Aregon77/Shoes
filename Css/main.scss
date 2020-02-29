@@ -176,29 +176,3 @@ main{
     
 }
 
-@media (max-width: 767px) {
-
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-
-}
-
-
-@media (min-width: 1280px) {
-    html{
-        font-size: 15px;
-    }
-    body{
-        font-size: 21px;
-    }
-    header .header__subtitle p{
-        transform: translateX(-125px) translateY(354px) rotate(-90deg);
-    }
-    .main__about .main__about_picture{
-        transform: translateX(98px);
-    }
-}

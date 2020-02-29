@@ -909,21 +909,4 @@ main .main__subtitle {
     height: 45px;
   }
 }
-
-@media (min-width: 1280px) {
-  html {
-    font-size: 15px;
-  }
-  body {
-    font-size: 21px;
-  }
-  header .header__subtitle p {
-    -webkit-transform: translateX(-125px) translateY(354px) rotate(-90deg);
-            transform: translateX(-125px) translateY(354px) rotate(-90deg);
-  }
-  .main__about .main__about_picture {
-    -webkit-transform: translateX(98px);
-            transform: translateX(98px);
-  }
-}
 /*# sourceMappingURL=main.css.map */
