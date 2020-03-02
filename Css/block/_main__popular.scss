@@ -5,13 +5,16 @@
         flex-direction: row;
         flex-wrap: wrap;
         .main__popular_item{
-            flex: 50%;
+            flex: 25%;
+            padding-left: .8rem;
             .popular__picture{
-                width: 250px;
-                height: 305px;
+                width: 100%;
+                max-width: 250px;
+                max-height: 305px;
                 position: relative;
     
                 margin-bottom: 6rem;
+                
                 img{
                     width: 100%;
                 }

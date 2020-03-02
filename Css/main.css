@@ -359,8 +359,9 @@ header .header__subtitle p {
 }
 
 .main__about .main__about_picture {
-  width: 670px;
-  height: 570px;
+  width: 100%;
+  max-width: 670px;
+  max-height: 570px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,14 +412,16 @@ header .header__subtitle p {
 }
 
 .main__popular .main__popular_block .main__popular_item {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  padding-left: .8rem;
 }
 
 .main__popular .main__popular_block .main__popular_item .popular__picture {
-  width: 250px;
-  height: 305px;
+  width: 100%;
+  max-width: 250px;
+  max-height: 305px;
   position: relative;
   margin-bottom: 6rem;
 }
@@ -494,8 +497,9 @@ header .header__subtitle p {
   border: 6px solid #fff;
   -webkit-box-shadow: 0px 5px 19px 1px rgba(223, 220, 220, 0.75);
           box-shadow: 0px 5px 19px 1px rgba(223, 220, 220, 0.75);
-  width: 480px;
-  height: 530px;
+  width: 100%;
+  max-width: 480px;
+  max-height: 530px;
   position: relative;
 }
 
@@ -517,6 +521,7 @@ header .header__subtitle p {
 
 .main__collection .main__collection_picture img {
   height: 100%;
+  width: 100%;
 }
 
 /*main__reviews*/
@@ -595,9 +600,10 @@ header .header__subtitle p {
 }
 
 .main__blog .main__blog-item .main__blog-picture {
-  display: block;
-  width: 425px;
-  height: 460px;
+  width: 100%;
+  max-width: 425px;
+  max-height: 560px;
+  padding: 0px 0px 36% 0px;
   position: relative;
   border: 6px solid white;
   -webkit-box-shadow: 0px 5px 19px 1px rgba(223, 220, 220, 0.75);
@@ -635,12 +641,12 @@ header .header__subtitle p {
 .main__blog .main__blog-item .main__blog-picture img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   z-index: 1;
-  -webkit-transform: scale(1) translate3d(-50%, -50%, 0);
-          transform: scale(1) translate3d(-50%, -50%, 0);
 }
 
 .main__blog .main__blog-item .main__blog-block {
@@ -854,197 +860,4 @@ main .main__subtitle {
 }
 
 /*Media*/
-@media screen and (max-width: 1500px) {
-  header .header__social nav {
-    left: 95%;
-  }
-  header .header__subtitle p {
-    -webkit-transform: translateX(-130px) translateY(354px) rotate(-90deg);
-            transform: translateX(-130px) translateY(354px) rotate(-90deg);
-  }
-  .main .main__about {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    left: auto;
-  }
-  .main .main__about .main__about_desc {
-    left: 21%;
-  }
-  .main .main__popular {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .main .main__popular .main__popular_block .main__popular_item {
-    padding-left: 10%;
-    width: 50%;
-  }
-  .main .main__collection_block {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-  .main .main__collection_block p {
-    max-width: 480px;
-    line-height: 1.5;
-    font-size: .8em;
-  }
-  .main .main__collection_block a {
-    margin-left: 1rem;
-  }
-  .main .main__collection_picture:before {
-    display: none;
-  }
-  .main .main__blog {
-    padding-bottom: 18rem;
-  }
-  .main .main__blog .main__blog-item .main__blog-picture:after {
-    display: none;
-  }
-  .main .main__blog .main__blog-item .main__blog-block {
-    margin-left: 2.5rem;
-  }
-  .main .main__blog .main__blog-item .main__blog-block p {
-    max-width: 480px;
-    line-height: 1.5;
-    font-size: .85em;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    padding-bottom: 6rem;
-  }
-  .footer__inner .footer__form form input {
-    width: 270px;
-  }
-  .footer__inner .footer__form form .btn-footer {
-    width: 120px;
-  }
-  .footer__inner .footer__nav .nav__link {
-    margin-left: 8rem;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  header .header__social nav {
-    left: 93%;
-  }
-  header .header__subtitle p {
-    -webkit-transform: translateX(-120px) translateY(354px) rotate(-90deg);
-            transform: translateX(-120px) translateY(354px) rotate(-90deg);
-  }
-  .main .main__about {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    left: auto;
-  }
-  .main .main__about .main__about_desc {
-    left: 10%;
-  }
-  .main .main__blog {
-    padding-bottom: 6rem;
-  }
-  .main .main__collection .main__collection_picture {
-    width: 344px;
-    height: 370px;
-  }
-  .main .main__collection .main__collection_block p {
-    width: 352px;
-  }
-  .footer__inner .footer__logo .logo p {
-    font-size: 1.2em;
-  }
-  .footer__inner .footer__form form input {
-    width: 220px;
-  }
-  .footer__inner .footer__form form .btn-footer {
-    width: 100px;
-  }
-  .footer__inner .footer__nav .nav__link {
-    margin-left: 8rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .btn-main {
-    height: 40px;
-    width: 122px;
-  }
-  html {
-    font-size: 5px;
-  }
-  body {
-    font-size: 12px;
-  }
-  header {
-    background-position: center left;
-    height: 100vh;
-  }
-  header .logo {
-    position: absolute;
-    z-index: 1;
-  }
-  header .btn-header {
-    width: 200px;
-    height: 40px;
-  }
-  header .menu_btn .burger-menu {
-    height: 40px;
-    width: 40px;
-    outline: 0;
-  }
-  header .menu_btn .nav__link {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-right: 5px;
-    width: 300px;
-  }
-  header .menu_btn .nav__link a {
-    margin-right: 12px;
-    outline: 0;
-  }
-  header .menu_btn .nav__link_active {
-    position: relative;
-    z-index: 100;
-    width: 300px;
-  }
-  header .header__main_brand {
-    padding-top: 7em;
-  }
-  header .header__picture {
-    bottom: 100px;
-  }
-  header .header__social nav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    left: 8%;
-    top: 360px;
-  }
-  header .header__social nav .header__social_link {
-    margin-left: 20px;
-    margin-bottom: 0;
-    width: 45px;
-    height: 45px;
-  }
-  header .header__subtitle {
-    display: none;
-  }
-  .main .main__about_picture {
-    height: 470px;
-  }
-  .main .main__about_desc {
-    top: 66%;
-    left: 4% !important;
-  }
-  .main .main__about_desc .main__title {
-    font-size: 2em;
-  }
-  .main .main__about_desc .main__subtitle {
-    text-align: left;
-    padding-bottom: 0;
-  }
-}
 /*# sourceMappingURL=main.css.map */
