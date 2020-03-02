@@ -87,14 +87,12 @@ Import
 .btn-popular {
   background: transparent;
   border: 2px solid #fff;
-  width: 150px;
+  max-width: 150px;
   height: 50px;
   color: #fff;
   position: absolute;
   top: 45%;
   left: 21%;
-  right: 0;
-  bottom: 0;
   opacity: 0;
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
@@ -352,7 +350,7 @@ header .header__subtitle p {
   padding-bottom: 80px;
   top: auto;
   right: auto;
-  left: -7%;
+  left: -6%;
   bottom: auto;
   position: relative;
 }
@@ -437,12 +435,12 @@ header .header__subtitle p {
 .main__popular .main__popular_block .main__popular_item .popular__picture:before {
   content: "";
   opacity: 0;
-  width: 230px;
-  height: 286px;
+  width: 94%;
+  height: 94%;
   background-color: #82f4d3;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 3%;
+  left: 3%;
   right: 0;
   bottom: 0;
   -webkit-transition: all .2s linear;
@@ -800,6 +798,10 @@ body {
   z-index: 1;
 }
 
+.logo img {
+  min-width: 40px;
+}
+
 .logo p {
   font-size: 2em;
   font-family: "Ubuntu";
@@ -858,4 +860,55 @@ main .main__subtitle {
 }
 
 /*Media*/
+@media (max-width: 1440px) {
+  /*Header*/
+  header {
+    /*Nav*/
+  }
+  header .header__social nav {
+    left: 96%;
+  }
+  header .header__subtitle p {
+    -webkit-transform: translateX(-120px) translateY(354px) rotate(-90deg);
+            transform: translateX(-120px) translateY(354px) rotate(-90deg);
+  }
+  /*Main*/
+  main .main__about {
+    left: 0;
+  }
+  main .main__collection .main__collection_picture:before {
+    top: 190px;
+    left: 220px;
+  }
+  main .main__collection .btn-main {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 1110px) {
+  header {
+    /*Nav*/
+  }
+  header .header__social nav {
+    left: 95%;
+  }
+  /*Main*/
+  main .main__collection .main__collection_picture {
+    max-width: 440px;
+  }
+  main .main__collection .main__collection_picture:before {
+    display: none;
+  }
+  main .main__popular_block .main__popular_item .popular__picture:before {
+    display: none;
+  }
+  main .main__popular_block .main__popular_item .popular__picture .btn-popular {
+    opacity: 1;
+    top: 91%;
+    right: 21%;
+    background-color: #82f4d3;
+    color: #0a0a0a;
+    border: 0;
+  }
+}
 /*# sourceMappingURL=main.css.map */

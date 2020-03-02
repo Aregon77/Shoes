@@ -44,6 +44,7 @@ header {
         position: relative;
         nav{
             margin: auto;
+            
 
             display: flex;
             flex-direction: column;
@@ -58,6 +59,7 @@ header {
                 height: 55px;
 
                 margin-bottom: 3rem;
+
                 .social__icon{
                     display: block;
                     width: 100%;
