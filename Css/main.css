@@ -1008,4 +1008,66 @@ main .main__subtitle {
     max-width: 520px;
   }
 }
+
+@media (max-width: 450px) {
+  body {
+    font-size: 11px;
+  }
+  header .header__main .header__main_brand {
+    padding-top: 2em;
+  }
+  header .header__main .btn-header {
+    margin-left: 15px;
+  }
+  header .header__social nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    top: 234px;
+    left: 18%;
+  }
+  header .header__social nav .header__social_link {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  header .header__subtitle {
+    display: none;
+  }
+  .main .main__about {
+    padding-top: 4rem;
+    padding-bottom: 25rem;
+  }
+  .main .main__about .main__about_desc {
+    top: 60%;
+  }
+  .main .main__about .main__about_desc .main__title {
+    font-size: 2.5em;
+  }
+  .main .main__about .main__about_desc .btn-main {
+    max-width: 116px;
+    height: 36px;
+  }
+  .main .main__popular {
+    padding-bottom: 7rem;
+  }
+  .main .main__popular .main__popular_block .main__popular_item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+  .main .main__collection {
+    padding-bottom: 10rem;
+  }
+  .main .main__blog .blog__title {
+    padding-bottom: 5rem;
+  }
+  .main .main__blog .main__blog-item .main__blog-picture {
+    height: 403px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

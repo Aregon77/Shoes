@@ -298,3 +298,73 @@ main{
         }
     }
 }
+
+@media (max-width: 450px) {
+    body{
+        font-size: 11px;
+    }
+
+    header{
+        .header__main {
+            .header__main_brand{
+                padding-top: 2em;
+            }
+            .btn-header{
+                margin-left: 15px;
+            }
+        }
+        .header__social{
+            nav{
+                flex-direction: row;
+                top: 234px;
+                left: 18%;
+                .header__social_link{
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 10px;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .header__subtitle{
+            display: none;
+        }
+    }
+    .main{
+        .main__about{
+            padding-top: 4rem;
+            padding-bottom: 25rem;
+            .main__about_desc{
+                top: 60%;
+                .main__title{
+                    font-size: 2.5em;
+                }
+                .btn-main{
+                    max-width: 116px;
+                    height: 36px;
+                }
+            }
+        }
+        .main__popular {
+            padding-bottom: 7rem;
+            .main__popular_block{
+                .main__popular_item{
+                    flex:0 1 100%;
+                    padding-left: 0.8rem;
+                    padding-right: 0.8rem; 
+                }
+            }
+        }
+        .main__collection{
+            padding-bottom: 10rem;
+        }
+        .main__blog{
+            .blog__title{
+                padding-bottom: 5rem;
+            }
+            .main__blog-item .main__blog-picture{
+                height: 403px;
+            }
+        } 
+    }
+}
