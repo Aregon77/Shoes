@@ -57,7 +57,7 @@ Import
 
 /*.btn-main*/
 .btn-main {
-  width: 146px;
+  max-width: 146px;
   height: 47px;
   font-size: 1em;
   position: relative;
@@ -87,7 +87,7 @@ Import
 .btn-popular {
   background: transparent;
   border: 2px solid #fff;
-  max-width: 150px;
+  width: 150px;
   height: 50px;
   color: #fff;
   position: absolute;
@@ -409,9 +409,9 @@ header .header__subtitle p {
 }
 
 .main__popular .main__popular_block .main__popular_item {
-  -webkit-box-flex: 25%;
-      -ms-flex: 25%;
-          flex: 25%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
   padding-left: .8rem;
 }
 
@@ -869,8 +869,8 @@ main .main__subtitle {
     left: 96%;
   }
   header .header__subtitle p {
-    -webkit-transform: translateX(-120px) translateY(354px) rotate(-90deg);
-            transform: translateX(-120px) translateY(354px) rotate(-90deg);
+    -webkit-transform: translateX(-125px) translateY(354px) rotate(-90deg);
+            transform: translateX(-125px) translateY(354px) rotate(-90deg);
   }
   /*Main*/
   main .main__about {
@@ -886,11 +886,19 @@ main .main__subtitle {
 }
 
 @media (max-width: 1110px) {
+  body {
+    font-size: 14px;
+  }
   header {
+    height: 100vh;
     /*Nav*/
   }
   header .header__social nav {
     left: 95%;
+  }
+  header .header__picture img {
+    width: 50%;
+    height: 68%;
   }
   /*Main*/
   main .main__collection .main__collection_picture {
@@ -899,16 +907,105 @@ main .main__subtitle {
   main .main__collection .main__collection_picture:before {
     display: none;
   }
+  main .main__collection .main__subtitle {
+    max-width: 520px;
+  }
   main .main__popular_block .main__popular_item .popular__picture:before {
     display: none;
   }
   main .main__popular_block .main__popular_item .popular__picture .btn-popular {
+    max-width: 150px;
     opacity: 1;
     top: 91%;
     right: 21%;
     background-color: #82f4d3;
     color: #0a0a0a;
     border: 0;
+  }
+  main .main__blog {
+    padding-bottom: 12rem;
+  }
+  main .main__blog .main__blog-item .main__blog-picture {
+    margin-bottom: 30px;
+  }
+  main .main__blog .main__blog-item .main__blog-picture:after, main .main__blog .main__blog-item .main__blog-picture:before {
+    display: none;
+  }
+  main .main__blog .main__blog-block .main__subtitle {
+    padding-bottom: 4rem;
+  }
+}
+
+@media (max-width: 770px) {
+  body {
+    font-size: 13px;
+  }
+  /*header*/
+  header {
+    /*Nav*/
+  }
+  header .header__social nav {
+    left: 92%;
+  }
+  header .header__picture {
+    display: none;
+  }
+  header .header__main .header__main_brand {
+    padding-top: 8em;
+  }
+  header .header__main .header__main_brand .main_brand_picture {
+    width: 415px;
+    margin: 0 auto;
+  }
+  header .header__main .btn-header {
+    max-width: 191px;
+    word-spacing: 2px;
+    font-size: 1.4em;
+    margin-left: 135px;
+  }
+  header .header__social nav {
+    top: 44px;
+  }
+  header .header__subtitle p {
+    -webkit-transform: translateX(-125px) translateY(160px) rotate(-90deg);
+            transform: translateX(-125px) translateY(160px) rotate(-90deg);
+  }
+  /*main*/
+  .main .main__about_desc {
+    left: 5%;
+  }
+  .main .main__about_desc .main__subtitle {
+    padding-bottom: 2.5rem;
+  }
+  .main .main__about_desc .btn-main {
+    margin-left: 0;
+  }
+  .main .main__popular .main__popular_block {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .main .main__popular .main__popular_block .main__popular_item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+  .main .main__collection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .main .main__collection .main__collection_picture {
+    max-width: 413px;
+    margin-bottom: 50px;
+  }
+  .main .main__collection .main__collection_picture:before {
+    display: none;
+  }
+  .main .main__collection .main__subtitle {
+    max-width: 520px;
   }
 }
 /*# sourceMappingURL=main.css.map */

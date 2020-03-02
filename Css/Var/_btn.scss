@@ -51,7 +51,7 @@
 
 /*.btn-main*/ 
 .btn-main{
-    width: 146px;
+    max-width: 146px;
     height: 47px;
 
     font-size: 1em;
@@ -82,7 +82,7 @@
 .btn-popular{
     background:transparent;
     border:2px solid #fff;
-    max-width: 150px;
+    width: 150px;
     height: 50px;
 
     color:#fff;

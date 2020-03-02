@@ -5,7 +5,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         .main__popular_item{
-            flex: 25%;
+            flex: 0 1 25%;
             padding-left: .8rem;
             .popular__picture{
                 width: 100%;
