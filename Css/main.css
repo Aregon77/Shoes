@@ -209,8 +209,8 @@ header .header__social nav .header__social_link .social__icon:hover {
 header .header__subtitle p {
   width: 320px;
   display: inline-block;
-  -webkit-transform: translateX(-219px) translateY(354px) rotate(-90deg);
-          transform: translateX(-219px) translateY(354px) rotate(-90deg);
+  -webkit-transform: translateX(-193px) translateY(354px) rotate(-90deg);
+          transform: translateX(-193px) translateY(354px) rotate(-90deg);
   font-size: 0.9em;
   font-family: "Poppins";
   color: #8f8f8f;
@@ -411,7 +411,9 @@ header .header__subtitle p {
 }
 
 .main__popular .main__popular_block .main__popular_item {
-  width: 25%;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
 }
 
 .main__popular .main__popular_block .main__popular_item .popular__picture {
@@ -852,7 +854,7 @@ main .main__subtitle {
 }
 
 /*Media*/
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
   header .header__social nav {
     left: 95%;
   }
@@ -964,7 +966,7 @@ main .main__subtitle {
   }
 }
 
-@media screen and (max-height: 480px) {
+@media screen and (max-width: 480px) {
   .btn-main {
     height: 40px;
     width: 122px;
