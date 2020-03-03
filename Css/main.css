@@ -890,15 +890,20 @@ main .main__subtitle {
     font-size: 14px;
   }
   header {
-    height: 100vh;
+    height: 920px;
     /*Nav*/
   }
   header .header__social nav {
+    top: 210px;
     left: 95%;
   }
   header .header__picture img {
     width: 50%;
     height: 68%;
+  }
+  header .header__subtitle p {
+    -webkit-transform: translateX(-125px) translateY(330px) rotate(-90deg);
+            transform: translateX(-125px) translateY(330px) rotate(-90deg);
   }
   /*Main*/
   main .main__collection .main__collection_picture {
@@ -938,7 +943,7 @@ main .main__subtitle {
 
 @media (max-width: 770px) {
   body {
-    font-size: 13px;
+    font-size: 14px;
   }
   /*header*/
   header {
@@ -996,6 +1001,7 @@ main .main__subtitle {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    padding-bottom: 75px;
   }
   .main .main__collection .main__collection_picture {
     max-width: 413px;
@@ -1007,14 +1013,28 @@ main .main__subtitle {
   .main .main__collection .main__subtitle {
     max-width: 520px;
   }
+  .main .main__blog .main__blog-item .main__blog-picture {
+    height: 403px;
+  }
 }
 
 @media (max-width: 450px) {
   body {
-    font-size: 11px;
+    font-size: 13px;
+  }
+  header {
+    height: 730px;
+    background-position-x: 36%;
+  }
+  header .header__nav .logo p {
+    font-size: 1.8em;
   }
   header .header__main .header__main_brand {
     padding-top: 2em;
+  }
+  header .header__main .header__main_brand .main_brand_picture {
+    width: 300px;
+    margin-left: 0;
   }
   header .header__main .btn-header {
     margin-left: 15px;
@@ -1025,7 +1045,7 @@ main .main__subtitle {
         -ms-flex-direction: row;
             flex-direction: row;
     top: 234px;
-    left: 18%;
+    left: 16%;
   }
   header .header__social nav .header__social_link {
     width: 40px;
@@ -1036,15 +1056,19 @@ main .main__subtitle {
   header .header__subtitle {
     display: none;
   }
+  .main .btn-main {
+    max-width: 116px;
+    height: 36px;
+  }
   .main .main__about {
     padding-top: 4rem;
-    padding-bottom: 25rem;
+    padding-bottom: 32rem;
   }
   .main .main__about .main__about_desc {
-    top: 60%;
+    top: 52%;
   }
   .main .main__about .main__about_desc .main__title {
-    font-size: 2.5em;
+    font-size: 2.3em;
   }
   .main .main__about .main__about_desc .btn-main {
     max-width: 116px;
@@ -1060,6 +1084,10 @@ main .main__subtitle {
     padding-left: 0.8rem;
     padding-right: 0.8rem;
   }
+  .main .main__popular .main__popular_block .popular__picture .btn-popular {
+    width: 125px;
+    height: 36px;
+  }
   .main .main__collection {
     padding-bottom: 10rem;
   }
@@ -1068,6 +1096,51 @@ main .main__subtitle {
   }
   .main .main__blog .main__blog-item .main__blog-picture {
     height: 403px;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+  header {
+    height: 570px;
+  }
+  header .header__nav .logo p {
+    font-size: 1.8em;
+  }
+  header .header__main .header__main_brand {
+    padding-top: 0;
+  }
+  header .header__main .header__main_brand .main_brand_picture {
+    width: 230px;
+    margin-left: 0;
+  }
+  header .header__main .btn-header {
+    width: 155px;
+    height: 44px;
+    font-size: 1.2em;
+  }
+  header .header__social nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    top: 140px;
+    left: 10%;
+  }
+  header .header__social nav .header__social_link {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  header .header__subtitle {
+    display: none;
+  }
+  .main .main__popular .main__popular_block .popular__picture .btn-popular {
+    width: 100px;
+    height: 36px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -157,10 +157,11 @@ main{
         font-size: 14px;
     }
     header{
-        height: 100vh;
+        height: 920px;
         /*Nav*/
         .header__social{
             nav{
+                top: 210px;
                 left: 95%;
             }
         }
@@ -169,6 +170,9 @@ main{
                 width: 50%;
                 height: 68%;
             }
+        }
+        .header__subtitle p{
+            transform: translateX(-125px) translateY(330px) rotate(-90deg);
         }  
     }
     /*Main*/
@@ -225,7 +229,7 @@ main{
 
 @media (max-width: 770px) {
     body{
-        font-size: 13px;
+        font-size: 14px;
     }
     /*header*/
     header{
@@ -284,6 +288,7 @@ main{
         }
         .main__collection {
             flex-direction: column-reverse;
+            padding-bottom: 75px;
             .main__collection_picture{
                 max-width: 413px;
                 margin-bottom: 50px;
@@ -294,21 +299,39 @@ main{
             .main__subtitle{
                 max-width: 520px;
             }
-            
         }
+        .main__blog{
+            .main__blog-item .main__blog-picture{
+                height: 403px;
+            }
+        } 
     }
 }
 
 @media (max-width: 450px) {
     body{
-        font-size: 11px;
+        font-size: 13px;
     }
 
     header{
+        height: 730px;
+        background-position-x: 36%;
+        .header__nav{
+            .logo{
+                p{
+                    font-size: 1.8em;
+                }
+            }
+        }
         .header__main {
             .header__main_brand{
                 padding-top: 2em;
+                .main_brand_picture{
+                    width: 300px;
+                    margin-left: 0;
+                }
             }
+            
             .btn-header{
                 margin-left: 15px;
             }
@@ -317,7 +340,7 @@ main{
             nav{
                 flex-direction: row;
                 top: 234px;
-                left: 18%;
+                left: 16%;
                 .header__social_link{
                     width: 40px;
                     height: 40px;
@@ -331,13 +354,17 @@ main{
         }
     }
     .main{
+        .btn-main{
+            max-width: 116px;
+            height: 36px;
+        }
         .main__about{
             padding-top: 4rem;
-            padding-bottom: 25rem;
+            padding-bottom: 32rem;
             .main__about_desc{
-                top: 60%;
+                top: 52%;
                 .main__title{
-                    font-size: 2.5em;
+                    font-size: 2.3em;
                 }
                 .btn-main{
                     max-width: 116px;
@@ -353,6 +380,12 @@ main{
                     padding-left: 0.8rem;
                     padding-right: 0.8rem; 
                 }
+                .popular__picture{
+                    .btn-popular{
+                        width: 125px;
+                        height: 36px;
+                    }
+                }
             }
         }
         .main__collection{
@@ -366,5 +399,63 @@ main{
                 height: 403px;
             }
         } 
+    }
+}
+@media (max-width: 320px) {
+    body{
+        font-size: 12px;
+    }
+
+    header{
+        height: 570px;
+        .header__nav{
+            .logo{
+                p{
+                    font-size: 1.8em;
+                }
+            }
+        }
+        .header__main {
+            .header__main_brand{
+                padding-top: 0;
+                .main_brand_picture{
+                    width: 230px;
+                    margin-left: 0;
+                }
+            }
+            .btn-header{
+                width: 155px;
+                height: 44px;
+                font-size: 1.2em;
+            }
+        }
+        .header__social{
+            nav{
+                flex-direction: row;
+                top: 140px;
+                left: 10%;
+                .header__social_link{
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 10px;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .header__subtitle{
+            display: none;
+        }
+    }
+    .main{
+        .main__popular {
+            .main__popular_block{
+                .popular__picture{
+                    .btn-popular{
+                        width: 100px;
+                        height: 36px;
+                    }
+                }
+            }
+        }
     }
 }
