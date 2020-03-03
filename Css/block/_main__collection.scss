@@ -11,8 +11,9 @@
         background-color:#fde7ed;
         border:6px solid #fff;
         box-shadow: 0px 5px 19px 1px rgba(223, 220, 220, 0.75);
-        width: 480px;
-        height: 530px;
+        width: 100%;
+        max-width: 480px;
+        max-height: 530px;
         position: relative;
         &:before{
             display: block;
@@ -36,6 +37,7 @@
         }
         img{
             height: 100%;
+            width: 100%;
         }  
     }
 }

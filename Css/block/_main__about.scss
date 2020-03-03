@@ -9,13 +9,14 @@
 
     top: auto;
     right: auto;
-    left: -7%;
+    left: -6%;
     bottom: auto;
 
     position: relative;
     .main__about_picture{
-        width: 670px;
-        height: 570px;
+        width: 100%;
+        max-width: 670px;
+        max-height: 570px;
 
         display: flex;
         align-items: center;
