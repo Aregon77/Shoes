@@ -46,7 +46,6 @@ body{
     margin: 0 auto;
     padding: 0 15px;
 }
-
 /*Logo*/
 .logo{
     display: flex;
@@ -431,6 +430,103 @@ main{
                 height: 403px;
             }
         } 
+    }
+    .footer{
+        .footer__inner{
+            flex-direction: column;
+            margin:0 auto;
+            padding: 0;
+            .footer__logo{
+                padding-bottom: 20px;
+                padding-top: 20px;
+            }
+            .footer__nav,.footer__support,.footer__form{
+                width: 100%;
+                background-color: #82f4d3;
+                border-bottom: 1px solid #888888;;
+                .footer__title{
+                    padding-left: 5px;
+                    &:Before{
+                        content: "Menu";
+                        text-decoration: none;
+                        font-size: 2em;
+                        font-family: "Poppins";
+                        color: #888888;
+                        line-height: 1.667;  
+                    }
+                }
+                .nav__link{
+                    display: none;
+                    .link{
+                        font-size: 1.4em;
+                        margin-bottom: 11px;
+                        padding-left: 15px;
+                        position: relative;
+                        &:before{
+                            content:"";
+                            display: block;
+                            position: absolute;
+                            background-color:#888888;
+                            width: 5px;
+                            height: 5px;
+                            border-radius:50%;
+
+                            top: 12px;
+                            left: 2px;
+                        }
+                    }
+                }
+            }
+            .footer__support{
+                .footer__title{
+                    &:Before{
+                        content: "Support";
+                        text-decoration: none;
+                        font-size: 2em;
+                        font-family: "Poppins";
+                        color: #888888;
+                        line-height: 1.667;  
+                    }
+                }
+                .support{
+                    display: none;
+                    .link{
+                        font-size: 1.4em;
+                        margin-bottom: 11px;
+                        padding-left: 15px;
+                        position: relative;
+                        &:before{
+                            content:"";
+                            display: block;
+                            position: absolute;
+                            background-color:#888888;
+                            width: 5px;
+                            height: 5px;
+                            border-radius:50%;
+
+                            top: 12px;
+                            left: 2px;
+                        }    
+                    }
+                }
+            }
+            .footer__form{
+                .footer__title{
+                    &:Before{
+                        content: "Form";
+                        text-decoration: none;
+                        font-size: 2em;
+                        font-family: "Poppins";
+                        color: #888888;
+                        line-height: 1.667;  
+                    }
+                }
+                form{
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }   
+            }                    
+        }
     }
 }
 @media (max-width: 320px) {
