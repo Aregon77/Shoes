@@ -3,13 +3,13 @@ header {
     background-size: cover;
     height: 1000px;
     position: relative;
+    padding-top: 6rem;
     .header__nav{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
 
-        padding-top: 6rem;
         padding-bottom: 10rem;
         
     }
