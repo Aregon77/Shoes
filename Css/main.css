@@ -897,7 +897,7 @@ main .main__subtitle {
     /*Nav*/
   }
   header .header__social nav {
-    top: 210px;
+    top: 170px;
     left: 95%;
   }
   header .header__picture img {
@@ -905,8 +905,8 @@ main .main__subtitle {
     height: 68%;
   }
   header .header__subtitle p {
-    -webkit-transform: translateX(-125px) translateY(330px) rotate(-90deg);
-            transform: translateX(-125px) translateY(330px) rotate(-90deg);
+    -webkit-transform: translateX(-125px) translateY(281px) rotate(-90deg);
+            transform: translateX(-125px) translateY(281px) rotate(-90deg);
   }
   /*Main*/
   main .main__collection .main__collection_picture {
