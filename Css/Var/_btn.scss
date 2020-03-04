@@ -1,7 +1,10 @@
 .btn{
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
 
     font-family: $Fonts-Button;
     color:$Color-Button;
@@ -45,6 +48,8 @@
 
         z-index: -1;
         
+        -webkit-transition: all .2s linear;
+        
         transition: all .2s linear;
     }
 }
@@ -75,6 +80,8 @@
 
         z-index: 1;
     
+        -webkit-transition: all .2s linear;
+    
         transition: all .2s linear;
     }
 }
@@ -92,6 +99,8 @@
     left: 21%;
 
     opacity: 0;
+    
+    -webkit-transition: all .3s linear;
     
     transition: all .3s linear;
 }

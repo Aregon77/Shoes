@@ -1,11 +1,15 @@
 .main__popular{
     padding-bottom: 13rem;
     .main__popular_block{
+        display: -webkit-box;
         display: flex;
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+                flex-direction: row;
         flex-wrap: wrap;
         .main__popular_item{
-            flex: 0 1 25%;
+            -webkit-box-flex: 0;
+                    flex: 0 1 25%;
             padding-left: .8rem;
             .popular__picture{
                 width: 100%;
@@ -35,6 +39,8 @@
                     left: 3%;
                     right: 0;
                     bottom: 0;  
+                    
+                    -webkit-transition: all .2s linear;  
                     
                     transition: all .2s linear;
                 }
