@@ -78,7 +78,7 @@ Import
   border: 1px solid #82f4d3;
   top: -12px;
   left: -12px;
-  z-index: 1;
+  z-index: -1;
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
 }
@@ -981,6 +981,7 @@ header .header__subtitle p {
   }
   header .header__main .btn-header {
     margin-left: 15px;
+    font-size: 1.1em;
   }
   header .header__social nav {
     -webkit-box-orient: horizontal;
@@ -1012,7 +1013,7 @@ header .header__subtitle p {
     top: 52%;
   }
   .main .main__about .main__about_desc .main__title {
-    font-size: 2.3em;
+    font-size: 1.8em;
   }
   .main .main__about .main__about_desc .btn-main {
     max-width: 116px;
@@ -1031,6 +1032,7 @@ header .header__subtitle p {
   .main .main__popular .main__popular_block .popular__picture .btn-popular {
     width: 125px;
     height: 36px;
+    font-size: .8em;
   }
   .main .main__collection {
     padding-bottom: 10rem;
@@ -1183,6 +1185,9 @@ header .header__subtitle p {
     display: none;
   }
   /*main*/
+  .main .main .main__about .main__about_desc .main__title {
+    font-size: 1.5em;
+  }
   .main .main__popular .main__popular_block .popular__picture .btn-popular {
     width: 100px;
     height: 36px;
