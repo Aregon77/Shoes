@@ -825,7 +825,7 @@ header .header__subtitle p {
   }
 }
 
-@media (min-width: 771px) and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .main .main__popular .main__popular_block .main__popular_item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -865,6 +865,7 @@ header .header__subtitle p {
     /*Nav*/
   }
   header .header__social nav {
+    top: 97px;
     left: 92%;
   }
   header .header__picture {
@@ -883,9 +884,6 @@ header .header__subtitle p {
     font-size: 1.4em;
     margin-left: 135px;
   }
-  header .header__social nav {
-    top: 44px;
-  }
   header .header__subtitle p {
     -webkit-transform: translateX(-125px) translateY(160px) rotate(-90deg);
     transform: translateX(-125px) translateY(160px) rotate(-90deg);
@@ -900,28 +898,6 @@ header .header__subtitle p {
   .main .main__about_desc .btn-main {
     margin-left: 0;
   }
-  .main .main__popular .main__popular_block {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  .main .main__popular .main__popular_block .main__popular_item {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 1 50%;
-        flex: 0 1 50%;
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-  }
-  .main .main__collection {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse;
-    padding-bottom: 75px;
-  }
-  .main .main__collection .main__collection_picture {
-    max-width: 413px;
-    margin-bottom: 50px;
-  }
   .main .main__collection .main__collection_picture:before {
     display: none;
   }
@@ -931,9 +907,101 @@ header .header__subtitle p {
   .main .main__blog .main__blog-item .main__blog-picture {
     height: 403px;
   }
+  .footer .footer__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .footer .footer__inner .footer__logo {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .footer .footer__inner .footer__nav, .footer .footer__inner .footer__support, .footer .footer__inner .footer__form {
+    width: 100%;
+    background-color: #82f4d3;
+    border-bottom: 1px solid #888888;
+  }
+  .footer .footer__inner .footer__nav .footer__title, .footer .footer__inner .footer__support .footer__title, .footer .footer__inner .footer__form .footer__title {
+    padding-left: 5px;
+  }
+  .footer .footer__inner .footer__nav .footer__title:Before, .footer .footer__inner .footer__support .footer__title:Before, .footer .footer__inner .footer__form .footer__title:Before {
+    content: "Menu";
+    text-decoration: none;
+    font-size: 2em;
+    font-family: "Poppins";
+    color: #888888;
+    line-height: 1.667;
+  }
+  .footer .footer__inner .footer__nav .nav__link, .footer .footer__inner .footer__support .nav__link, .footer .footer__inner .footer__form .nav__link {
+    display: none;
+  }
+  .footer .footer__inner .footer__nav .nav__link .link, .footer .footer__inner .footer__support .nav__link .link, .footer .footer__inner .footer__form .nav__link .link {
+    font-size: 1.4em;
+    margin-bottom: 11px;
+    padding-left: 15px;
+    position: relative;
+  }
+  .footer .footer__inner .footer__nav .nav__link .link:before, .footer .footer__inner .footer__support .nav__link .link:before, .footer .footer__inner .footer__form .nav__link .link:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #888888;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 12px;
+    left: 2px;
+  }
+  .footer .footer__inner .footer__support .footer__title:Before {
+    content: "Support";
+    text-decoration: none;
+    font-size: 2em;
+    font-family: "Poppins";
+    color: #888888;
+    line-height: 1.667;
+  }
+  .footer .footer__inner .footer__support .support {
+    display: none;
+  }
+  .footer .footer__inner .footer__support .support .link {
+    font-size: 1.4em;
+    margin-bottom: 11px;
+    padding-left: 15px;
+    position: relative;
+  }
+  .footer .footer__inner .footer__support .support .link:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #888888;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 12px;
+    left: 2px;
+  }
+  .footer .footer__inner .footer__form .footer__title:Before {
+    content: "Form";
+    text-decoration: none;
+    font-size: 2em;
+    font-family: "Poppins";
+    color: #888888;
+    line-height: 1.667;
+  }
+  .footer .footer__inner .footer__form form {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .footer .footer__inner .footer__form .footer__social-link .footer_icon {
+    width: 26px;
+    height: 26px;
+  }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   body {
     font-size: 13px;
   }
@@ -987,7 +1055,7 @@ header .header__subtitle p {
     -ms-flex-direction: row;
         flex-direction: row;
     top: 234px;
-    left: 16%;
+    left: 23%;
   }
   header .header__social nav .header__social_link {
     width: 40px;
@@ -1031,9 +1099,21 @@ header .header__subtitle p {
     width: 125px;
     height: 36px;
     font-size: .8em;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: auto;
+    -webkit-transform: translatey(-24px);
+            transform: translatey(-24px);
   }
   .main .main__collection {
     padding-bottom: 10rem;
+  }
+  .main .main__collection .main__collection_picture {
+    max-width: 347px;
+  }
+  .main .main__collection .main__subtitle {
+    font-size: 1em;
   }
   .main .main__blog .blog__title {
     padding-bottom: 5rem;
@@ -1042,103 +1122,11 @@ header .header__subtitle p {
     height: 403px;
   }
   /*footer*/
-  .footer .footer__inner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    margin: 0 auto;
-    padding: 0;
-  }
-  .footer .footer__inner .footer__logo {
-    padding-bottom: 20px;
-    padding-top: 20px;
-  }
-  .footer .footer__inner .footer__nav, .footer .footer__inner .footer__support, .footer .footer__inner .footer__form {
-    width: 100%;
-    background-color: #82f4d3;
-    border-bottom: 1px solid #888888;
-  }
-  .footer .footer__inner .footer__nav .footer__title, .footer .footer__inner .footer__support .footer__title, .footer .footer__inner .footer__form .footer__title {
-    padding-left: 5px;
-  }
-  .footer .footer__inner .footer__nav .footer__title:Before, .footer .footer__inner .footer__support .footer__title:Before, .footer .footer__inner .footer__form .footer__title:Before {
-    content: "Menu";
-    text-decoration: none;
-    font-size: 2em;
-    font-family: "Poppins";
-    color: #888888;
-    line-height: 1.667;
-  }
-  .footer .footer__inner .footer__nav .nav__link, .footer .footer__inner .footer__support .nav__link, .footer .footer__inner .footer__form .nav__link {
-    display: none;
-  }
-  .footer .footer__inner .footer__nav .nav__link .link, .footer .footer__inner .footer__support .nav__link .link, .footer .footer__inner .footer__form .nav__link .link {
-    font-size: 1.4em;
-    margin-bottom: 11px;
-    padding-left: 15px;
-    position: relative;
-  }
-  .footer .footer__inner .footer__nav .nav__link .link:before, .footer .footer__inner .footer__support .nav__link .link:before, .footer .footer__inner .footer__form .nav__link .link:before {
-    content: "";
-    display: block;
-    position: absolute;
-    background-color: #888888;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    top: 12px;
-    left: 2px;
-  }
-  .footer .footer__inner .footer__support .footer__title:Before {
-    content: "Support";
-    text-decoration: none;
-    font-size: 2em;
-    font-family: "Poppins";
-    color: #888888;
-    line-height: 1.667;
-  }
-  .footer .footer__inner .footer__support .support {
-    display: none;
-  }
-  .footer .footer__inner .footer__support .support .link {
-    font-size: 1.4em;
-    margin-bottom: 11px;
-    padding-left: 15px;
-    position: relative;
-  }
-  .footer .footer__inner .footer__support .support .link:before {
-    content: "";
-    display: block;
-    position: absolute;
-    background-color: #888888;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    top: 12px;
-    left: 2px;
-  }
-  .footer .footer__inner .footer__form .footer__title:Before {
-    content: "Form";
-    text-decoration: none;
-    font-size: 2em;
-    font-family: "Poppins";
-    color: #888888;
-    line-height: 1.667;
-  }
-  .footer .footer__inner .footer__form form {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .footer .footer__inner .footer__form .footer__social-link .footer_icon {
-    width: 26px;
-    height: 26px;
-  }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 321px) {
   body {
-    font-size: 12px;
+    font-size: 10px;
   }
   /*Header*/
   header {
@@ -1157,7 +1145,7 @@ header .header__subtitle p {
   header .header__main .btn-header {
     width: 155px;
     height: 44px;
-    font-size: 1.2em;
+    font-size: 1em;
   }
   header .header__social nav {
     -webkit-box-orient: horizontal;
@@ -1179,106 +1167,11 @@ header .header__subtitle p {
   /*main*/
   .main .main .main__about .main__about_desc .main__title {
     font-size: 1.5em;
+    line-height: 1;
   }
   .main .main__popular .main__popular_block .popular__picture .btn-popular {
     width: 100px;
     height: 36px;
-  }
-}
-
-@media (max-height: 500px) {
-  /*footer*/
-  .footer .footer__inner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    margin: 0 auto;
-    padding: 0;
-  }
-  .footer .footer__inner .footer__logo {
-    padding-bottom: 20px;
-    padding-top: 20px;
-  }
-  .footer .footer__inner .footer__nav, .footer .footer__inner .footer__support, .footer .footer__inner .footer__form {
-    width: 100%;
-    background-color: #82f4d3;
-    border-bottom: 1px solid #888888;
-  }
-  .footer .footer__inner .footer__nav .footer__title, .footer .footer__inner .footer__support .footer__title, .footer .footer__inner .footer__form .footer__title {
-    padding-left: 5px;
-  }
-  .footer .footer__inner .footer__nav .footer__title:Before, .footer .footer__inner .footer__support .footer__title:Before, .footer .footer__inner .footer__form .footer__title:Before {
-    content: "Menu";
-    text-decoration: none;
-    font-size: 2em;
-    font-family: "Poppins";
-    color: #888888;
-    line-height: 1.667;
-  }
-  .footer .footer__inner .footer__nav .nav__link, .footer .footer__inner .footer__support .nav__link, .footer .footer__inner .footer__form .nav__link {
-    display: none;
-  }
-  .footer .footer__inner .footer__nav .nav__link .link, .footer .footer__inner .footer__support .nav__link .link, .footer .footer__inner .footer__form .nav__link .link {
-    font-size: 1.4em;
-    margin-bottom: 11px;
-    padding-left: 15px;
-    position: relative;
-  }
-  .footer .footer__inner .footer__nav .nav__link .link:before, .footer .footer__inner .footer__support .nav__link .link:before, .footer .footer__inner .footer__form .nav__link .link:before {
-    content: "";
-    display: block;
-    position: absolute;
-    background-color: #888888;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    top: 12px;
-    left: 2px;
-  }
-  .footer .footer__inner .footer__support .footer__title:Before {
-    content: "Support";
-    text-decoration: none;
-    font-size: 2em;
-    font-family: "Poppins";
-    color: #888888;
-    line-height: 1.667;
-  }
-  .footer .footer__inner .footer__support .support {
-    display: none;
-  }
-  .footer .footer__inner .footer__support .support .link {
-    font-size: 1.4em;
-    margin-bottom: 11px;
-    padding-left: 15px;
-    position: relative;
-  }
-  .footer .footer__inner .footer__support .support .link:before {
-    content: "";
-    display: block;
-    position: absolute;
-    background-color: #888888;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    top: 12px;
-    left: 2px;
-  }
-  .footer .footer__inner .footer__form .footer__title:Before {
-    content: "Form";
-    text-decoration: none;
-    font-size: 2em;
-    font-family: "Poppins";
-    color: #888888;
-    line-height: 1.667;
-  }
-  .footer .footer__inner .footer__form form {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .footer .footer__inner .footer__form .footer__social-link .footer_icon {
-    width: 26px;
-    height: 26px;
   }
 }
 
