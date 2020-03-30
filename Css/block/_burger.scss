@@ -16,16 +16,14 @@
                 flex-direction: row;
         -webkit-box-align:center;
                 align-items:center;
-
-        visibility: hidden;
+        justify-content: center;
 
         -webkit-transition: all .5s;
 
-        transition: all .6s;
+        transition: all .5s;
        
         -webkit-transform:  translateX(-100%);
                 transform:  translateX(-100%);
-        opacity: 0;
 
         background-color:#000;
        
@@ -51,10 +49,7 @@
     .nav__link_active{
         -webkit-transform:  translateX(0%);
                 transform:  translateX(0%);
-        opacity: 1;
         visibility: visible;
-
-        justify-content: center;
     }
     .burger-menu {
         display: block;

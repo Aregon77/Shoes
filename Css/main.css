@@ -238,13 +238,13 @@ header .header__subtitle p {
   -webkit-box-align: center;
   -ms-flex-align: center;
       align-items: center;
-  visibility: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-transition: all .5s;
-  -webkit-transition: all .6s;
-  transition: all .6s;
+  transition: all .5s;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
-  opacity: 0;
   background-color: #000;
   position: absolute;
   top: 0;
@@ -268,11 +268,7 @@ header .header__subtitle p {
 .menu_btn .nav__link_active {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
-  opacity: 1;
   visibility: visible;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .menu_btn .burger-menu {
@@ -1119,12 +1115,6 @@ header .header__subtitle p {
   }
   header .header__nav .logo p {
     font-size: 1.8em;
-  }
-  header .header__nav .menu_btn .nav__link {
-    position: absolute;
-    -webkit-transform: translateX(-71%);
-    transform: translateX(-71%);
-    top: -123px;
   }
   header .header__main .header__main_brand {
     padding-top: 0;
