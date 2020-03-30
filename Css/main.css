@@ -1165,9 +1165,12 @@ header .header__subtitle p {
     display: none;
   }
   /*main*/
-  .main .main .main__about .main__about_desc .main__title {
-    font-size: 1.5em;
+  .main .main__title {
+    font-size: 2.4em;
     line-height: 1;
+  }
+  .main .main__popular {
+    padding-top: 3em;
   }
   .main .main__popular .main__popular_block .popular__picture .btn-popular {
     width: 100px;

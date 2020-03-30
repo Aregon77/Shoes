@@ -428,7 +428,7 @@
     /*footer*/
 }
 
-@media (max-width: 321px)  {
+@media (max-width: 321px){
     body{
         font-size: 10px;
     }
@@ -478,11 +478,12 @@
     }
     /*main*/
     .main{
-        .main .main__about .main__about_desc .main__title{
-            font-size: 1.5em;
+        .main__title{
+            font-size: 2.4em;
             line-height: 1;
         }
         .main__popular {
+            padding-top: 3em;
             .main__popular_block{
                 .popular__picture{
                     .btn-popular{
