@@ -1,7 +1,7 @@
 header {
     background: url(../img/Header/Back.jpg) no-repeat center center;
     background-size: cover;
-    height: 1000px;
+    height: 965px;
     position: relative;
     padding-top: 6rem;
     .header__nav{
@@ -65,7 +65,7 @@ header {
                     flex-direction: column;
 
             position: absolute;
-                top: 245px;
+                top: 370px;
                 right: 0;
                 left: 101%;
                 bottom: 0;
@@ -93,8 +93,8 @@ header {
         p{
             width: 320px;
             display: inline-block;
-            -webkit-transform: translateX(-193px) translateY(354px) rotate(-90deg);
-                    transform: translateX(-193px) translateY(354px) rotate(-90deg);
+            -webkit-transform: translateX(-193px) translateY(295px) rotate(-90deg);
+                    transform: translateX(-193px) translateY(295px) rotate(-90deg);
 
             font-size: 0.9em;
             font-family: $Fonts-Link;
