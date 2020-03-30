@@ -752,8 +752,8 @@ header .header__subtitle p {
     left: 96%;
   }
   header .header__subtitle p {
-    -webkit-transform: translateX(-125px) translateY(354px) rotate(-90deg);
-    transform: translateX(-125px) translateY(354px) rotate(-90deg);
+    -webkit-transform: translateX(-125px) translateY(295px) rotate(-90deg);
+    transform: translateX(-125px) translateY(295px) rotate(-90deg);
   }
   /*Main*/
   main .main__about {
@@ -778,16 +778,16 @@ header .header__subtitle p {
     /*Nav*/
   }
   header .header__social nav {
-    top: 170px;
+    top: 270px;
     left: 95%;
   }
   header .header__picture img {
     width: 50%;
-    height: 68%;
+    height: 100%;
   }
   header .header__subtitle p {
-    -webkit-transform: translateX(-125px) translateY(281px) rotate(-90deg);
-    transform: translateX(-125px) translateY(281px) rotate(-90deg);
+    -webkit-transform: translateX(-125px) translateY(246px) rotate(-90deg);
+    transform: translateX(-125px) translateY(246px) rotate(-90deg);
   }
   /*Main*/
   main .main__collection .main__collection_picture {
@@ -822,6 +822,37 @@ header .header__subtitle p {
   }
   main .main__blog .main__blog-block .main__subtitle {
     padding-bottom: 4rem;
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1000px) {
+  .main .main__popular .main__popular_block .main__popular_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+  }
+  .main .main__collection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .main .main__collection .main__collection_picture {
+    margin-bottom: 50px;
   }
 }
 
